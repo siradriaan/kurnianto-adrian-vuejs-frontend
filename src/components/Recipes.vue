@@ -2,7 +2,7 @@
   <h1>
     Recipe Page
   </h1>
-  <button  @click="toIngredients">back to ingredients</button>
+  <button  @click="back">back to Home</button>
 </template>
 
 <script>
@@ -10,8 +10,8 @@
 export default {
   name: 'Recipes',
   methods: {
-    toIngredients() {
-      this.$emit('back');
+    back() {
+      this.$emit('switchPage', -1);
     },
   },
 };
