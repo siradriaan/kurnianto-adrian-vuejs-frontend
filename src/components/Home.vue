@@ -13,7 +13,7 @@
       <label>{{ ingredient.title }} : {{ ingredient['use-by'] }}</label>
     </div>
     {{chosen}}
-    <button @click="toIngredients">check recipe</button>
+    <button @click="toRecipe">check recipe</button>
 </template>
 
 <script>
@@ -33,7 +33,8 @@ export default {
       this.chosen = [];
     },
     toRecipe() {
-      this.$emit('switch-page', 1);
+      this.$emit('fetch-recipe', this.chosen.join(','));
+      this.$emit('switch-page', 'Recipe');
     },
     fetchIngredients() {
       axios({
