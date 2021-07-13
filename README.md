@@ -1,29 +1,34 @@
 # kurnianto-adrian-vuejs-frontend
 
-## Project setup
+# Project title 
+
+>Recipe suggestion app
+
+## Description
+
+>Assignment test from andalin for frontend development
+
+## Dependencies
+
+>Vue: 3.0.0
+
+>Bootstrap: via cdn
+
+
+## Usage
+
+install dependencies and packages
+
 ```
+git clone https://github.com/siradriaan/kurnianto-adrian-vuejs-frontend.git
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Compiles and minifies for production
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
